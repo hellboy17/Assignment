@@ -1,0 +1,4 @@
+#Fri Mar 05 10:26:25 IST 2021
+base.0=D\:\\mobile_dev2\\yoboshu_assignment\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

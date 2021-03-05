@@ -3,9 +3,9 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 
 class TrainerProfileScreen extends StatelessWidget {
   final images = [
-    'https://www.anabolicshealth.com/wp-content/uploads/2020/12/Jeff-Seid-Steroids.jpg',
-    'https://blog.priceplow.com/wp-content/uploads/myprotein-jeff-seid-priceplow-1200x900-cropped.png',
-    'https://i.ytimg.com/vi/KHjRbEaRaLQ/maxresdefault.jpg',
+    'https://i.ytimg.com/vi/7MiOiifQXBg/maxresdefault.jpg',
+    'https://www.health-yogi.com/wp-content/uploads/2019/08/IMG_20190812_013117-830x1024.jpg',
+    'https://i.ytimg.com/vi/UD4RssoWwBI/maxresdefault.jpg',
   ];
 
   @override
@@ -61,10 +61,10 @@ class TrainerProfileScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Jeff Seid',
+                            'Ullyses Jr.',
                             style: TextStyle(
                               fontSize: 24,
-                              color: Colors.blue,
+                              color: Colors.red,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -72,11 +72,11 @@ class TrainerProfileScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Rs 150',
+                                'Rs 300',
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w700,
-                                    color: Colors.blue),
+                                    color: Colors.red),
                               ),
                               Text(
                                 'Per session',
@@ -90,10 +90,10 @@ class TrainerProfileScreen extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            '5+',
+                            '10+',
                             style: TextStyle(
                               fontSize: 24,
-                              color: Colors.blue,
+                              color: Colors.red,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -102,7 +102,7 @@ class TrainerProfileScreen extends StatelessWidget {
                             'years of experiences',
                           ),
                           Spacer(),
-                          Icon(Icons.verified_user, color: Colors.blue),
+                          Icon(Icons.verified_user, color: Colors.green),
                           SizedBox(width: 4),
                           Text(
                             'Certified',
@@ -121,12 +121,14 @@ class TrainerProfileScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 24),
                       Text(
-                        'I was born June 12th, 1994 in Renton, Washington, '
-                        'United States. I began playing sports at the young '
-                        'age of 5 and it was essentially the beginning of '
-                        'what has become an epic journey.',
+                        'Ulisses Jr was born in the heart of New York City,'
+                        'and even as a child, he had a passion for fitness. '
+                        'During high school, he began competing in '
+                        'both his football and athletics teams. '
+                        'However, as one of the smallest in his age group, '
+                        'he found it hard to make an impact during game-time.',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.w300,
                         ),
                       ),
@@ -142,13 +144,13 @@ class TrainerProfileScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 24),
                       Wrap(
-                        children: ['GYM', 'YOGA', 'BOXING']
+                        children: ['GYM', 'YOGA', 'BOXING', 'FOOTBALL']
                             .map(
                               (e) => Container(
                                 padding: EdgeInsets.all(12),
                                 margin: EdgeInsets.all(4),
                                 decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.blue),
+                                    border: Border.all(color: Colors.red),
                                     borderRadius: BorderRadius.circular(20)),
                                 child: Text(e),
                               ),
@@ -167,7 +169,7 @@ class TrainerProfileScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 24),
                       Text(
-                        'Injury | Smoking Addiction | Anxiety',
+                        'Injury | Smoking Addiction | Anxiety | Alchoholism',
                         style: TextStyle(fontSize: 16),
                       ),
                       SizedBox(height: 16),
@@ -183,10 +185,10 @@ class TrainerProfileScreen extends StatelessWidget {
                       SizedBox(height: 24),
                       Row(
                         children: [
-                          Icon(Icons.location_on, color: Colors.blue),
+                          Icon(Icons.location_on, color: Colors.red),
                           SizedBox(width: 12),
                           Text(
-                            'Dellaware, United States',
+                            'Detroit, United States',
                             style: TextStyle(fontSize: 16),
                           ),
                         ],
@@ -208,7 +210,7 @@ class TrainerProfileScreen extends StatelessWidget {
                             Icons
                                 .signal_cellular_connected_no_internet_4_bar_outlined,
                             size: 28,
-                            color: Colors.blue,
+                            color: Colors.red,
                           ),
                           SizedBox(width: 16),
                           Text(
@@ -222,7 +224,7 @@ class TrainerProfileScreen extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.home,
-                            color: Colors.blue,
+                            color: Colors.red,
                             size: 28,
                           ),
                           SizedBox(width: 16),
@@ -237,7 +239,7 @@ class TrainerProfileScreen extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.streetview,
-                            color: Colors.blue,
+                            color: Colors.red,
                             size: 28,
                           ),
                           SizedBox(width: 16),
@@ -267,19 +269,19 @@ class TrainerProfileScreen extends StatelessWidget {
                       Plan(
                         title: 'STARTER PLAN',
                         subtitle1: 'Buy 5 sessions',
-                        subtitle2: 'Rs 150/ sessions',
+                        subtitle2: 'Rs 300/ sessions',
                       ),
                       SizedBox(height: 20),
                       Plan(
                         title: 'POPULAR PLAN',
-                        subtitle1: 'Buy 5 sessions',
-                        subtitle2: 'Rs 150/ sessions',
+                        subtitle1: 'Buy 10 sessions',
+                        subtitle2: 'Rs 250/ sessions',
                       ),
                       SizedBox(height: 20),
                       Container(
                         clipBehavior: Clip.antiAlias,
                         decoration: BoxDecoration(
-                          color: Colors.deepPurpleAccent.withOpacity(0.5),
+                          color: Colors.deepOrange.withOpacity(0.5),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         padding: EdgeInsets.all(20),
@@ -317,7 +319,7 @@ class TrainerProfileScreen extends StatelessWidget {
                                 padding: EdgeInsets.all(12),
                                 margin: EdgeInsets.all(4),
                                 decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.blue),
+                                    border: Border.all(color: Colors.red),
                                     borderRadius: BorderRadius.circular(20)),
                                 child: Text(e),
                               ),
@@ -336,7 +338,7 @@ class TrainerProfileScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 24),
                       Text(
-                        'Monday | Tuesday | Wednesday',
+                        'Monday | Tuesday | Wednesday | Saturday',
                         style: TextStyle(fontSize: 16),
                       ),
                       SizedBox(height: 16),
@@ -349,47 +351,17 @@ class TrainerProfileScreen extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(height: 24),
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.language,
-                            size: 28,
-                            color: Colors.blue,
-                          ),
-                          SizedBox(width: 16),
-                          Text(
-                            'Hindi',
-                            style: TextStyle(fontSize: 16),
-                          ),
-                        ],
-                      ),
                       SizedBox(height: 8),
                       Row(
                         children: [
                           Icon(
                             Icons.language,
-                            color: Colors.blue,
+                            color: Colors.red,
                             size: 28,
                           ),
                           SizedBox(width: 16),
                           Text(
                             'English',
-                            style: TextStyle(fontSize: 16),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 8),
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.language,
-                            color: Colors.blue,
-                            size: 28,
-                          ),
-                          SizedBox(width: 16),
-                          Text(
-                            'Nepali',
                             style: TextStyle(fontSize: 16),
                           ),
                         ],
@@ -406,7 +378,7 @@ class TrainerProfileScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 24),
                       Text(
-                        'B.Sc in Sport and Exercise Science',
+                        'ACE Certified Trainer',
                         style: TextStyle(fontSize: 16),
                       ),
                       SizedBox(height: 16),
@@ -433,7 +405,7 @@ class TrainerProfileScreen extends StatelessWidget {
                                 padding: EdgeInsets.all(12),
                                 margin: EdgeInsets.all(4),
                                 decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.blue),
+                                    border: Border.all(color: Colors.red),
                                     borderRadius: BorderRadius.circular(20)),
                                 child: Text(e),
                               ),
@@ -465,14 +437,14 @@ class Plan extends StatelessWidget {
     return Container(
       clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(
-        color: Colors.deepPurpleAccent.withOpacity(0.5),
+        color: Colors.deepOrangeAccent.withOpacity(0.5),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
         children: [
           Container(
             padding: EdgeInsets.all(12),
-            color: Colors.deepPurple.withOpacity(0.5),
+            color: Colors.deepOrange.withOpacity(0.5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
